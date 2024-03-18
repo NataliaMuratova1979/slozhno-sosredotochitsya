@@ -2,3 +2,39 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+
+:root { /* Переменные тёмной темы */
+  --background-image: url(../images/cover-image-dark.png); /*light url(../images/cover-image-light.png) */
+  --background-color: #000028; /* ligth #fff1f7 */
+  --accent-color: #ff0070; /* light #353430 */
+  --main-font: "IBM Plex Mono", Courier, monospace;
+  --button_hover: rgb(255 0 112 / 0.4); /* light rgb(50 49 45 / 0.4) */
+  --header-title: #db00ff; /* light ffc2e6 */
+  --text-decor: #ff0070; /* light ff8dcb */
+  --decorated-text: #000028; /* light #353430 */
+  --article-text-color: #f1b2ce; /* light #353430 */
+}
+
+.decorative-element_dark {
+  position: absolute; /*в светлой теме display: none; */
+  display: inline-block;
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+  font-weight: var(--font-regular);
+  line-height: 25px;
+  color: var(--accent-color); /*в светлой теме display: none; */
+  right: 28px; 
+}
+
+.decorative-element_dark::after {
+  content: ""; /*в светлой теме display: none; */
+  position: absolute;
+  width: 15px; 
+  height: 15px;
+  background: var(--accent-color); 
+  border-radius: 50%;
+  left: 39px;
+  top: 5px;
+  filter: blur(3px);
+}
