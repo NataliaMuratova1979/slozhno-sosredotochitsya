@@ -16,25 +16,3 @@
   --article-text-color: #f1b2ce; /* light #353430 */
 }
 
-.decorative-element_dark {
-  position: absolute; /*в светлой теме display: none; */
-  display: inline-block;
-  font-family: var(--main-font);
-  font-size: var(--main-font-size);
-  font-weight: var(--font-regular);
-  line-height: 25px;
-  color: var(--accent-color); /*в светлой теме display: none; */
-  right: 28px; 
-}
-
-.decorative-element_dark::after {
-  content: ""; /*в светлой теме display: none; */
-  position: absolute;
-  width: 15px; 
-  height: 15px;
-  background: var(--accent-color); 
-  border-radius: 50%;
-  left: 39px;
-  top: 5px;
-  filter: blur(3px);
-}

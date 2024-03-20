@@ -17,14 +17,10 @@
   --text-decor: #ff8dcb;
   --decorated-text: #353430;
   --article-text-color: #353430;
-}
 
-.theme_light .decorative-element_dark {
-  display: none;
-}
-
-.theme_auto .decorative-element_dark {
-  display: none;
+  .decorative-element_dark {
+    display: none;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -37,5 +33,10 @@
     --text-decor: #ff8dcb;
     --decorated-text: #353430;
     --article-text-color: #353430;
+
+    .decorative-element_dark {
+      display: none;
+    }
   } 
 }
+
