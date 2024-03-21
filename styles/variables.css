@@ -14,5 +14,10 @@
   --text-decor: #ff0070; /* light ff8dcb */
   --decorated-text: #000028; /* light #353430 */
   --article-text-color: #f1b2ce; /* light #353430 */
+  --main-font-size: 18px;
+  --font-regular: 400;
+  --font-bold: 700;
+  --s-size: 10px;
+  --m-size: 20px;
 }
 
