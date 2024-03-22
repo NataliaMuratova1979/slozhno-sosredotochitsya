@@ -22,7 +22,7 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  /*top: 10px смартфон 20px десктоп*/
+  top: 10px; /* 20px десктоп*/
   right: 0px;
   width: 25px;
   height: 25px;
@@ -34,7 +34,7 @@
   content: "";
   position: absolute;
   left: 0px;
-  /*bottom: 10px смартфон 20px десктоп*/
+  bottom: 10px; /*20px десктоп*/
   width: 25px;
   height: 25px;
   border-bottom: 1px solid var(--accent-color); /* light #353430 */
@@ -45,7 +45,7 @@
   position: absolute; /*в светлой теме display: none; */
   display: inline-block;
   text-transform: uppercase;
-  /*top: 10px смартфон 20px десктоп*/
+  top: 10px; /*20px десктоп*/
   right: 28px; 
   font-family: var(--main-font);
   font-size: var(--main-font-size);
@@ -58,12 +58,12 @@
 .decorative-element_dark::after {
   content: ""; /*в светлой теме display: none; */
   position: absolute;
-  width: 15px; 
-  height: 15px;
+  width: 9px; 
+  height: 9px;
   background: var(--accent-color); 
   border-radius: 50%;
-  left: 39px;
-  top: 5px;
+  left: 41px;
+  top: 8px;
   box-shadow: 0 0 4px 2px var(--accent-color);
 }
 
@@ -178,11 +178,9 @@
 
 .article-text-link {
   text-decoration: none;
-  display: inline-block; 
-  height: 22px;
   text-shadow: 2px 2px 0 var(--text-decor); /* dark #ff0070 light #ff8dcb */
   cursor: pointer;
-  line-height: 90%;
+  position: relative;
 }
 
 .article-text-link:hover {  
@@ -194,8 +192,19 @@
 }
 
 .article-text-link:focus-visible {
-  outline: 1px solid var(--article-text-color);
-  outline-offset: -1px;
+  border: none;
+  outline: none;
+ }
+
+.article-text-link:focus-visible::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: -1px;
+  display: block;
+  width: 105%;
+  height: 20px;
+  border: 1px solid var(--article-text-color);
 }
 
 .accent-article-text  {
@@ -410,7 +419,7 @@
   }
 
   .header__title {
-    margin-inline-start: -18px;
+    margin-inline-start: -16px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
@@ -459,7 +468,7 @@
     object-fit: contain;
     align-self: start;
   }
-git
+
   .gallery__item-2 { /*мороженое*/
     grid-column-start: 3;
     grid-column-end: 4;

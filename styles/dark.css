@@ -32,12 +32,12 @@
   .decorative-element_dark::after {
     content: ""; /*в светлой теме display: none; */
     position: absolute;
-    width: 15px; 
-    height: 15px;
+    width: 9px; 
+    height: 9px;
     background: var(--accent-color); 
     border-radius: 50%;
-    left: 39px;
-    top: 5px;
+    left: 41px;
+    top: 8px;
     box-shadow: 0 0 4px 2px var(--accent-color);
   }
 }
